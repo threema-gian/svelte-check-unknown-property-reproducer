@@ -26,6 +26,10 @@
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
   </p>
+
+  <svg viewBox="20 20 40 40">
+    <circle cx="40" cy="40" />
+  </svg>
 </main>
 
 <style>
@@ -43,5 +47,16 @@
   }
   .read-the-docs {
     color: #888;
+  }
+  svg {
+    width: 40px;
+  }
+  svg circle {
+    --thickness: 5px;
+
+    fill: red;
+    stroke: green;
+    r: calc((40px - var(--thickness)) / 2);
+    stroke-width: var(--thickness);
   }
 </style>
